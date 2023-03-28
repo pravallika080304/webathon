@@ -1,0 +1,55 @@
+<!--book or find event section-->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="book event" id="book event">
+
+    <h1 class="heading"> <span>book <span>event </h1>
+
+    
+        <form action="https://formspree.io/f/xayzdrlp" method="POST">
+            <div class="elem-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+              <label for="email">Your E-mail</label>
+              <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+            </div>
+            <div class="elem-group">
+              <label for="phone">Your Phone Number</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
+            <hr>
+            <div class="elem-group inlined">
+              <label for="adult">Number of guests</label>
+              <input type="number" id="adult" name="total_guests" placeholder="10" min="10" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="event date"> Date of event</label>
+              <input type="date" id="event date" name="event_date" required>
+            </div>
+            <div class="elem-group">
+              <label for="venue-selection">Select Venue Preference</label>
+              <select id="venue-selection" name="venue_preference" required>
+                  <option value="">Choose a venue from the List</option>
+                  <option value="hotels">Hotels</option>
+                  <option value="auditorium">Auditorium</option>
+                  <option value="open garden">Open garden</option>
+              </select>
+            </div>
+            <hr>
+            <div class="elem-group">
+              <label for="message">Anything Else?</label>
+              <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+            </div>
+            <button type="submit"> Book The Event </button>
+          </form>
+
+</section>
+</body>
+</html>
